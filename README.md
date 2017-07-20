@@ -24,7 +24,7 @@ TO DO:
  - [ ] Inventory/Items
  - [ ] Complex enemy AI
  - [ ]  Attack state style (Aggressive, passive, defensive)
-  - [ ] Movement paths
+   - [ ] Movement paths
  - [ ] Improve state machine
  - [ ] Improve world generation
   - [ ] Variable materials
