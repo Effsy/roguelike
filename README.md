@@ -8,9 +8,12 @@ This is an old project and will likely remain unfinished.
 Screen-size is locked at 840x600. If running the .swf in browser, resize accordingly.
 
 
+Use arrow keys to move.
+
 CURRENT:
 
  * Refactor AI Component Class
+
 
 COMPLETED:
  - [x] Basic State machine
@@ -20,6 +23,7 @@ COMPLETED:
  - [x] Movement - grid-locked
  - [x] Graduated block lighting (smoothened)
  - [x] Basic enemy AI
+
 
 TO DO:
  
