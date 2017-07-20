@@ -3,12 +3,16 @@ The start of a Roguelike using component based entitiy system.
 Can be forked to either turn-based or real-time gameplay.
 
 This is an old project and will likely remain unfinished.
-(Copied from development logs)
+
+
+When Running:
 
 Screen-size is locked at 840x600. If running the .swf in browser, resize accordingly.
 
-
 Use arrow keys to move.
+
+
+(Copied from development logs)
 
 CURRENT:
 
