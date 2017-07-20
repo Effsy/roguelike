@@ -1,8 +1,11 @@
 # roguelike
 The start of a Roguelike using component based entitiy system. 
+
 Can be forked to either turn-based or real-time gameplay.
 
+
 This is an old project and will likely remain unfinished.
+
 (Copied from development logs)
 
 CURRENT:
