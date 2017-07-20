@@ -6,6 +6,7 @@ This is an old project and will likely remain unfinished.
 (Copied from development logs)
 
 CURRENT:
+
  = Refactor AI Component Class
 
 COMPLETED:
