@@ -7,26 +7,26 @@ This is an old project and will likely remain unfinished.
 
 CURRENT:
 
- = Refactor AI Component Class
+ - Refactor AI Component Class
 
 COMPLETED:
- X Basic State machine
- X Random world generation
-  x Variable room shapes and sizes
-  x All rooms reachable via connected paths
- X Movement - grid-locked
- X Graduated block lighting (smoothened)
- X Basic enemy AI
+ - Basic State machine
+ - Random world generation
+  - Variable room shapes and sizes
+  - All rooms reachable via connected paths
+ - Movement - grid-locked
+ - Graduated block lighting (smoothened)
+ - Basic enemy AI
 
 TO DO:
- + Abilities/weapons/further movement
- + Inventory/Items
- + Complex enemy AI
+ - Abilities/weapons/further movement
+ - Inventory/Items
+ - Complex enemy AI
   - Attack state style (Aggressive, passive, defensive)
   - Movement paths
- + Improve state machine
- + Improve world generation
+ - Improve state machine
+ - Improve world generation
   - Variable materials
   - Random structures
   - Enemy placement
- + Assets (tilesheet)
+ - Assets (tilesheet)
