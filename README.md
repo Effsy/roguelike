@@ -1,25 +1,29 @@
-# roguelike
-The start of a Roguelike using component based entitiy system. 
+# Roguelike
+
+The start of a top-down Roguelike using component based entitiy system. 
 Can be forked to either turn-based or real-time gameplay.
 
 This is an old project and will likely remain unfinished.
 
 
-When Running:
+### To Run:
 
-Screen-size is locked at 840x600. If running the .swf in browser, resize accordingly.
+Run the .swf directly in your browser.
+
+Screen-size is locked at **840x600**. If running the .swf in browser, resize accordingly.
 
 Use arrow keys to move.
 
 
-(Copied from development logs)
+## Development Progress (Copied from development logs)
 
-CURRENT:
+### CURRENT:
 
  * Refactor AI Component Class
 
 
-COMPLETED:
+### COMPLETED:
+
  - [x] Basic State machine
  - [x] Random world generation
    - [x] Variable room shapes and sizes
@@ -29,7 +33,7 @@ COMPLETED:
  - [x] Basic enemy AI
 
 
-TO DO:
+### TO DO:
  
  - [ ] Abilities/weapons/further movement
  - [ ] Inventory/Items
