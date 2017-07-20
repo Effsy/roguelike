@@ -1,6 +1,6 @@
 # Roguelike
 
-The start of a top-down Roguelike using component based entitiy system. 
+The start of a top-down Roguelike using component based entity system. 
 Can be forked to either turn-based or real-time gameplay.
 
 This is an old project and will likely remain unfinished.
