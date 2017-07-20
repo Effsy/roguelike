@@ -5,6 +5,9 @@ Can be forked to either turn-based or real-time gameplay.
 This is an old project and will likely remain unfinished.
 (Copied from development logs)
 
+Screen-size is locked at 840x600. If running the .swf in browser, resize accordingly.
+
+
 CURRENT:
 
  * Refactor AI Component Class
