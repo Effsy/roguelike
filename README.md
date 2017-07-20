@@ -19,9 +19,9 @@ COMPLETED:
  - Basic enemy AI
 
 TO DO:
- - Abilities/weapons/further movement
- - Inventory/Items
- - Complex enemy AI
+ - [ ] Abilities/weapons/further movement
+ - [ ] Inventory/Items
+ - [ ] Complex enemy AI
   - Attack state style (Aggressive, passive, defensive)
   - Movement paths
  - Improve state machine
@@ -30,3 +30,4 @@ TO DO:
   - Random structures
   - Enemy placement
  - Assets (tilesheet)
+
