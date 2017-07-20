@@ -19,7 +19,8 @@ COMPLETED:
  - Basic enemy AI
 
 TO DO:
- Markup : - [ ] Abilities/weapons/further movement
+ 
+ - [ ] Abilities/weapons/further movement
  - [ ] Inventory/Items
  - [ ] Complex enemy AI
   - Attack state style (Aggressive, passive, defensive)
