@@ -24,17 +24,6 @@
 		
 		public function tick():void{
 			
-			
-			
-			
-			
-			
-			
 		}
-		
-		
-		
-		
 	}
-	
 }
