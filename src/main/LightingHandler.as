@@ -90,7 +90,7 @@
 		}
 		
 		
-		
+		//Bresenham's Line Algorithm for ray-casting
 		public function lineBresenham(x1:int, y1:int, x2:int, y2:int):void{
 			var swap:Boolean = false;
 			var temp:int;
