@@ -31,7 +31,6 @@
 			enemyPoints = calculateEnemyPoints(enemyRadius);
 		}
 		
-		
 		private function calculateEnemyPoints(maxDistance:int):Array{
 			var points:Array = [];
 			var distanceManhattan:int = 1;
@@ -93,18 +92,8 @@
 				//Calculate enemies currently on screen and store in array in order of distance form player (manhattan distance)
 				calculateEnemiesOnScreen();
 				
-				
-			
-				
 			}
-			
-			
-			
-			
-			
 		}
-		
-		
 		
 		//Player's choice of move 
 		public function turnInput():void{
@@ -144,8 +133,6 @@
 				movingRight = true;
 				GameData.player.body.tileX++;
 			}
-				
-			//
 		}
 		
 		//Player's result of move 
@@ -189,16 +176,11 @@
 			trace(GameData.player.body.tileX + "               " + GameData.player.body.tileY)
 		}
 		
-		
 		public function get turnReady():Boolean{
 			return _turnReady;
 		}
 		public function set turnReady(value:Boolean):void{
 			_turnReady = value;
 		}
-		
-		
-		
 	}
-	
 }
