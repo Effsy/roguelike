@@ -38,8 +38,7 @@
 		private var panDistance:int = 30;
 		private var scrollSpeed:Number = 0.1; //Normal is 0.01
 		
-		public function World(gameContainer:GameContainer, enemyList:Array)
-		{
+		public function World(gameContainer:GameContainer, enemyList:Array){
 			this.gameContainer = gameContainer;
 			
 			//Fill maps with 0s
@@ -51,75 +50,58 @@
 			generateWorld = new GenerateWorld(enemyList);
 			tileMapIDs = generateWorld.getTileMap();
 			
-			
-			
-			
-			
-			
 			//Prepare tileMapTiles from IDs (Can't equate due to immutability)
 			GameData.tileMapObjects = Utils.duplicateMultidimensionalArray(tileMapIDs);
 			loadTileMapObjects();
 			
 			//Prepare lightMapTiles with an empty 2D array
 			loadLightMapObjects();
-			
-			
+					
 			//Position player in room
 			setPlayerPosition(generateWorld.entranceX, generateWorld.entranceY);
 
-			
-			
 			//scaleX = 0.2;
 			//scaleY = 0.2;
 		}
 		
 		
-		public function tick():void
-		{
+		public function tick():void{
 			//Scroll Map
-			if(gameContainer.getInputHandler().getScrollDirection() == -1 && scaleX > 0.1)
-			{
+			if(gameContainer.getInputHandler().getScrollDirection() == -1 && scaleX > 0.1){
 				scaleX -= scrollSpeed;
 				scaleY -= scrollSpeed;
 				gameContainer.getInputHandler().setScrollDirection(0);
 			}
-			else if(gameContainer.getInputHandler().getScrollDirection() == 1 && scaleX < 1.5)
-			{
+			else if(gameContainer.getInputHandler().getScrollDirection() == 1 && scaleX < 1.5){
 				scaleX += scrollSpeed;
 				scaleY += scrollSpeed;
 				gameContainer.getInputHandler().setScrollDirection(0);
 			}
 			
 			//Prevent scrolling past limits
-			if(scaleX < 0.1)
-			{
+			if(scaleX < 0.1){
 				scaleX = 0.1;
 				scaleY = 0.1;
 			}
-			else if(scaleX > 1.5)
-			{
+			else if(scaleX > 1.5){
 				scaleX = 1.5;
 				scaleY = 1.5
 			}
 			
 			/*
 			//Moving World with mouse or keyboard
-			if(gameContainer.getInputHandler().getMouseX() < panDistance || gameContainer.getInputHandler().getKeyLeft())
-			{
+			if(gameContainer.getInputHandler().getMouseX() < panDistance || gameContainer.getInputHandler().getKeyLeft()){
 				x += panSpeed;
 				
 			}
-			else if(gameContainer.getInputHandler().getMouseX() > gameContainer.getStage().stageWidth - panDistance || gameContainer.getInputHandler().getKeyRight())
-			{
+			else if(gameContainer.getInputHandler().getMouseX() > gameContainer.getStage().stageWidth - panDistance || gameContainer.getInputHandler().getKeyRight()){
 				x -= panSpeed;
 			}
 			
-			if(gameContainer.getInputHandler().getMouseY() < panDistance || gameContainer.getInputHandler().getKeyUp())
-			{
+			if(gameContainer.getInputHandler().getMouseY() < panDistance || gameContainer.getInputHandler().getKeyUp()){
 				y += panSpeed;
 			}
-			else if(gameContainer.getInputHandler().getMouseY() > gameContainer.getStage().stageHeight - panDistance || gameContainer.getInputHandler().getKeyDown())
-			{
+			else if(gameContainer.getInputHandler().getMouseY() > gameContainer.getStage().stageHeight - panDistance || gameContainer.getInputHandler().getKeyDown()){
 				y -= panSpeed;
 			}
 			*/
@@ -141,10 +123,8 @@
 		}		
 		public function loadLightMapObjects():void{
 			var lightTile:LightTile;
-			for(var i:int = 0; i < GameData.worldSize; i++)
-			{
-				for(var j:int = 0; j < GameData.worldSize; j++)
-				{
+			for(var i:int = 0; i < GameData.worldSize; i++){
+				for(var j:int = 0; j < GameData.worldSize; j++){
 					GameData.lightMapObjects[i][j] = new LightTile(i, j);
 					GameData.lightMapObjects[i][j].body.x = i * GameData.tileSize;
 					GameData.lightMapObjects[i][j].body.y = j * GameData.tileSize;
@@ -155,21 +135,18 @@
 		
 		
 		//Get tile type based on ID at tile position in the tileMap - NOT PIXEL
-		public function getTile(xTile:int, yTile:int):String
-		{
+		public function getTile(xTile:int, yTile:int):String{
 			tile = Assets.tileList[tileMapIDs[xTile][yTile]];
 			
 			//if tile doesn't exist in tiles array, default tile is 1 (floorTile)
-			if(tile == null)
-			{
+			if(tile == null){
 				return Assets.tileList[1];
 			}
 			return tile;
 		}
 		
 		//Get tile ID at tile position in the tileMap - NOT PIXEL
-		public function getTileID(xTile:int, yTile:int):int
-		{
+		public function getTileID(xTile:int, yTile:int):int{
 			return tileMapIDs[xTile][yTile];
 		}
 		
@@ -177,25 +154,20 @@
 			return GameData.tileMapObjects[xTile][yTile];
 		}
 	
-		public function moveX(X:int):void
-		{
+		public function moveX(X:int):void{
 			this.x += X;
 		}
-		public function moveY(Y:int):void
-		{
+		public function moveY(Y:int):void{
 			this.y += Y;
 		}
 		
-		public function centreOnTile():void
-		{
+		public function centreOnTile():void{
 			this.x = -(GameData.player.body.tileX * GameData.tileSize) + GameData.playerXPoint;
 			this.y = -(GameData.player.body.tileY * GameData.tileSize) + GameData.playerYPoint;
 		}
 		
-		
 		//Sets world at start point relative to the player
-		public function setPlayerPosition(tileX:int, tileY:int):void
-		{
+		public function setPlayerPosition(tileX:int, tileY:int):void{
 			this.x = -(tileX * GameData.tileSize) + GameData.playerXPoint;
 			this.y = -(tileY * GameData.tileSize) + GameData.playerYPoint;
 		}		
@@ -222,5 +194,4 @@
 			_lightMapTiles = value;
 		}*/
 	}
-
 }
