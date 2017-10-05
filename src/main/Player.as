@@ -34,10 +34,5 @@
 		public function get speed():int{
 			return speedConst;
 		}
-		
-
-		
-		
 	}
-	
 }
