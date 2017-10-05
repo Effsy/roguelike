@@ -8,6 +8,13 @@
 	
 	import src.engine.Entity;
 	
+	/*
+	*View Component - Display
+	*All visible entities must contain a view component
+	*Call the render function to render the entity
+	*Call the renderAlpha function to render lighting of the entity
+	*/
+	
 	public class View{
 		
 		private var entity:Entity;
