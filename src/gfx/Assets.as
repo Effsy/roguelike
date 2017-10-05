@@ -1,5 +1,5 @@
-﻿package src.gfx
-{
+﻿package src.gfx{
+ 
 	import flash.display.Bitmap;
 	import flash.display.BitmapData;
 	import flash.geom.Rectangle;
@@ -10,12 +10,8 @@
 	import src.entities.tilespack.*;
 	//import src.entities.tilespack.FloorTile;
 	
-	public class Assets
-	{
-		
+	public class Assets{
 		private static var tileSize:int = 40;
-		
-
 		
 		public static var floorTileData:BitmapData = new BitmapData(tileSize, tileSize); 
 		public static var wallTileData:BitmapData = new BitmapData(tileSize, tileSize);
@@ -29,18 +25,12 @@
 		public static var lightSheet:LightSheet = new LightSheet();
 		//private static var enemySheet:EnemySheet = new EnemySheet();
 
-		public static function init():void
-		{
+		public static function init():void{
 			floorTileData.copyPixels(tileSheet, new Rectangle(0, 0, tileSize, tileSize), new Point());
 			wallTileData.copyPixels(tileSheet, new Rectangle(40, 0, tileSize, tileSize), new Point());
 			entranceTileData.copyPixels(tileSheet, new Rectangle(80, 0, tileSize, tileSize), new Point());
 			exitTileData.copyPixels(tileSheet, new Rectangle(120, 0, tileSize, tileSize), new Point());
 			escapeTileData.copyPixels(tileSheet, new Rectangle(160, 0, tileSize, tileSize), new Point());
-		}
-		
-		
-		
-		
+		}	
 	}
-	
 }
