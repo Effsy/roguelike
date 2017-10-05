@@ -27,8 +27,7 @@
 			startGame();
 		}
 		
-		public function init():void
-		{
+		public function init():void{
 			stageRef.align = StageAlign.TOP_LEFT;
 			stageRef.scaleMode = StageScaleMode.NO_SCALE;
 			//Assets.init();
@@ -37,8 +36,7 @@
 			addEventListener(Event.ENTER_FRAME, gameLoop);
 		}
 		
-		public function startGame():void
-		{
+		public function startGame():void{
 			//trace(this);
 			gameState = new GameState(this);
 			State.setState(gameState);
@@ -48,24 +46,19 @@
 			
 		}
 		
-		public function gameLoop(e:Event):void
-		{
+		public function gameLoop(e:Event):void{
 			inputHandler.tick();
 			
 			if(State.getState() != null)
 				State.getState().tick();
 		}
 		
-		public function getInputHandler():InputHandler
-		{
+		public function getInputHandler():InputHandler{
 			return inputHandler;
 		}
 		
-		public function getStage():Stage
-		{
+		public function getStage():Stage{
 			return stageRef;
 		}
-
 	}
-	
 }
