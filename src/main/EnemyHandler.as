@@ -17,7 +17,6 @@
 		
 		private var distanceMoved:int = 0;
 		
-		
 		public function EnemyHandler(gameContainer:GameContainer, world:World, player:Player, turnHandler:TurnHandler, enemyList:Array) {
 			this.gameContainer = gameContainer;
 			this.world = world;
@@ -26,17 +25,8 @@
 			this.enemyList = enemyList;
 		}
 		
-		
 		public function tick():void{			
 			
-			
-			
-			
 		}
-		
-		
-		
-		
 	}
-	
 }
