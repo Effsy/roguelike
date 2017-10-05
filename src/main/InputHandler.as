@@ -25,28 +25,23 @@
 		private var iPressed:Boolean = false;
 		private var pPressed:Boolean = false;
 		
-		public function InputHandler(gameContainer:GameContainer) 
-		{
+		public function InputHandler(gameContainer:GameContainer) {
 			this.gameContainer = gameContainer;
 			gameContainer.getStage().addEventListener(MouseEvent.MOUSE_WHEEL, onMouseWheelScroll);
 			gameContainer.getStage().addEventListener(KeyboardEvent.KEY_DOWN, onKeyPressed);
 			gameContainer.getStage().addEventListener(KeyboardEvent.KEY_UP, onKeyReleased);
 		}
 		
-		public function onMouseWheelScroll(e:MouseEvent):void
-		{
-			if(e.delta < 0)
-			{
+		public function onMouseWheelScroll(e:MouseEvent):void{
+			if(e.delta < 0){
 				scrollDirection = -1;
 			}
-			else if(e.delta > 0)
-			{
+			else if(e.delta > 0){
 				scrollDirection = 1;
 			}
 		}
 		
-		public function onKeyPressed(e:KeyboardEvent):void
-		{
+		public function onKeyPressed(e:KeyboardEvent):void{
 			switch(e.keyCode){
 				case Keyboard.UP:
 					upPressed = true;
@@ -85,8 +80,7 @@
 			}
 		}
 		
-		public function onKeyReleased(e:KeyboardEvent):void
-		{
+		public function onKeyReleased(e:KeyboardEvent):void{
 			switch(e.keyCode){
 				case Keyboard.UP:
 					upPressed = false;
@@ -118,80 +112,60 @@
 			}
 		}
 		
-		public function tick():void
-		{
+		public function tick():void{
 			
 		}
 		
-		public function getMouseX():int
-		{
+		public function getMouseX():int{
 			return gameContainer.mouseX;
 		}
-		public function getMouseY():int
-		{
+		public function getMouseY():int{
 			return gameContainer.mouseY;
 		}
 		
 		//Movement
-		public function getKeyUp():Boolean
-		{
+		public function getKeyUp():Boolean{
 			return upPressed;
 		}
-		public function getKeyDown():Boolean
-		{
+		public function getKeyDown():Boolean{
 			return downPressed;
 		}
-		public function getKeyLeft():Boolean
-		{
+		public function getKeyLeft():Boolean{
 			return leftPressed;
 		}
-		public function getKeyRight():Boolean
-		{
+		public function getKeyRight():Boolean{
 			return rightPressed;
 		}
 		
 		//Attacks
-		public function getKeyW():Boolean
-		{
+		public function getKeyW():Boolean{
 			return wPressed;
 		}
-		public function getKeyS():Boolean
-		{
+		public function getKeyS():Boolean{
 			return sPressed;
 		}
-		public function getKeyA():Boolean
-		{
+		public function getKeyA():Boolean{
 			return aPressed;
 		}
-		public function getKeyD():Boolean
-		{
+		public function getKeyD():Boolean{
 			return dPressed;
 		}
 		
-		public function getShiftPressed():Boolean
-		{
+		public function getShiftPressed():Boolean{
 			return shiftPressed;
 		}
-		public function getiPressed():Boolean
-		{
+		public function getiPressed():Boolean{
 			return iPressed;
 		}
-		public function getPPressed():Boolean
-		{
+		public function getPPressed():Boolean{
 			return pPressed;
 		}
 		
-		public function getScrollDirection():int
-		{
+		public function getScrollDirection():int{
 			return scrollDirection;
 		}
-		public function setScrollDirection(s:int):void
-		{
+		public function setScrollDirection(s:int):void{
 			scrollDirection = s;
 		}
-		
-		
-		
 	}
-	
 }
