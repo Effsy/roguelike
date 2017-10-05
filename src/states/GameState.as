@@ -40,9 +40,7 @@
 
 		private var entity:Entity;
 		
-		private var gameObjects:Sprite = new Sprite();
-		
-		
+		private var gameObjects:Sprite = new Sprite();		
 		
 		//HIERARCHY
 		//GameContainer
@@ -50,8 +48,7 @@
 		//GameObjects
 		//World
 		
-		public function GameState(gameContainer:GameContainer)
-		{
+		public function GameState(gameContainer:GameContainer){
 			super(gameContainer);
 			this.gameContainer = gameContainer;
 			
@@ -64,25 +61,16 @@
 			GameData.world.addChild(GameData.worldBitmap);
 			
 			//Prepare world
-			
 			turnHandler = new TurnHandler(gameContainer);
 			
 			GameData.player = new Player(gameContainer);
-			
-			
-
-
-			
 
 			//combatHandler = new CombatHandler(gameContainer, world, player);
 			//enemyHandler = new EnemyHandler(gameContainer, world, player, movementHandler, GameData.enemyList);
 			
 		}
 		
-		public override function tick():void
-		{			
-			
-			
+		public override function tick():void{			
 			GameData.player.tick();
 			turnHandler.tick();
 			GameData.world.tick();
@@ -118,10 +106,7 @@
 					GameData.lightMapObjects[i][j].view.renderAlpha();
 				}
 			}
-			
-
 		}
-		
 		
 		public function addEntity():void{
 			
@@ -131,19 +116,11 @@
 			
 		}
 		
-		public function init():void
-		{
+		public function init():void{
 			/*
 			Initialize players - positions, spells, etc.
 			
 			*/
 		}
-		
-		
-		
-
-			
-		
 	}
-	
 }
