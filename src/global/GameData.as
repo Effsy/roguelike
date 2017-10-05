@@ -25,7 +25,6 @@
 		public static var playerXPoint:int = screenWidth/2 - playerSize/2;
 		public static var playerYPoint:int = screenHeight/2 - playerSize/2;
 		
-		
 		//private var _spritesPerRow:int;
 		
 		//Entity/Render variables
@@ -44,8 +43,6 @@
 		
 		public static var enemyObjects:Array = [];
 		public static var enemiesOnScreen:Array = [];
-		
-		//
 		
 		/*
 		public static function get tileSize():int{
@@ -75,9 +72,7 @@
 		}
 		public function set worldBitmapData(bitmapData:BitmapData):void{
 			worldBitmapData = bitmapData;
-		}*/
-		
-	}
-	
-	
+		}
+		*/
+	}	
 }
