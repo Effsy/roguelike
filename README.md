@@ -1,6 +1,6 @@
-# Roguelike
+# Roguelike Game Engine
 
-The start of a randomly generated top-down Roguelike using a component-based entity system. 
+A game engine for a randomly generated top-down Roguelike using a component-based entity system. 
 Gameplay can be made into either turn-based or real-time.
 
 This is an old project and will likely remain unfinished.
