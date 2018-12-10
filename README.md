@@ -14,36 +14,17 @@ Screen-size is locked at **840x600**. If running the .swf in browser, resize acc
 
 Use arrow keys to move.
 
+### Features:
 
-## Development Progress (Copied from development logs)
-
-### CURRENT:
-
- * Refactor AI Component Class
-
-
-### COMPLETED:
-
- - [x] Basic State machine
- - [x] Random world generation
-   - [x] Variable room shapes and sizes
-   - [x] All rooms reachable via connected paths
- - [x] Movement - grid-locked
- - [x] Graduated block lighting (smoothened)
- - [x] Basic enemy AI
+ - Game state machine
+ - Bit-blitted graphics
+ - Frame-based animation engine
+ - Random world generation
+   - Variable room shapes and sizes
+   - All rooms reachable via connected paths
+ - Movement - grid-locked
+ - Graduated block lighting
+ - Basic enemy AI
 
 
-### TO DO:
- 
- - [ ] Abilities/weapons/further movement
- - [ ] Inventory/Items
- - [ ] Complex enemy AI
- - [ ]  Attack state style (Aggressive, passive, defensive)
-   - [ ] Movement paths
- - [ ] Improve state machine
- - [ ] Improve world generation
-   - [ ] Variable materials
-   - [ ] Random structures
-   - [ ] Enemy placement
- - [ ] Assets (tilesheet)
 
